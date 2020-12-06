@@ -24,6 +24,19 @@ namespace ASPNETCore5Demo.Controllers
             return db.Departments.AsNoTracking().ToList();
         }
 
+        [HttpGet("ddl")]
+        public ActionResult<IEnumerable<DepartmentDropDown>> GetDepartmentDropDown()
+        {
+            // return db.Database.SqlQuery<DepartmentDropDown>($"SELECT DepartmentID, Name FROM dbo.Department").ToList();
+
+            // return db.Departments.Select(p => new DepartmentDropDown() {
+            //     DepartmentId = p.DepartmentId,
+            //     Name = p.Name
+            // }).ToList();
+
+            return db.DepartmentDropDown.FromSqlInterpolated($"SELECT DepartmentID, Name FROM dbo.Department").ToList();
+        }
+
         [HttpGet("{id}")]
         public ActionResult<IEnumerable<Course>> GetDepartmentCourses(int id)
         {

@@ -21,14 +21,18 @@ namespace ASPNETCore5Demo.Controllers
         [HttpGet("")]
         public ActionResult<IEnumerable<Department>> GetDepartments()
         {
-            return db.Departments;
+            return db.Departments.AsNoTracking().ToList();
         }
 
         [HttpGet("{id}")]
         public ActionResult<IEnumerable<Course>> GetDepartmentCourses(int id)
         {
-            return db.Departments.Include(p => p.Courses)
-                .First(p => p.DepartmentId == id).Courses.ToList();
+            var dept = db.Departments.Include(p => p.Courses)
+                         .First(p => p.DepartmentId == id);
+
+            return dept.Courses.ToList();
+
+            // return db.Courses.Where(p => p.DepartmentId == id).ToList();
         }
     }
 }

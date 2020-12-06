@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using ASPNETCore5Demo.Models;
+using Omu.ValueInjecter;
 
 namespace ASPNETCore5Demo.Controllers
 {
@@ -45,11 +47,15 @@ namespace ASPNETCore5Demo.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult PutCourse(int id, Course model)
+        public IActionResult PutCourse(int id, CourseUpdateModel model)
         {
             var c = db.Courses.Find(id);
-            c.Credits = model.Credits;
-            c.Title = model.Title;
+            // c.Credits = model.Credits;
+            // c.Title = model.Title;
+
+            // using Omu.ValueInjecter;
+            c.InjectFrom(model);
+
             db.SaveChanges();
 
             return NoContent();
@@ -60,10 +66,20 @@ namespace ASPNETCore5Demo.Controllers
         {
             var c = db.Courses.Find(id);
             db.Courses.Remove(c);
-
             db.SaveChanges();
+
+            // db.Database.ExecuteSqlRaw($"DELETE FROM db.Course WHERE CourseId={id}");
 
             return Ok(c);
         }
+
+        [HttpDelete("all")]
+        public ActionResult<Course> DeleteCourseAll()
+        {
+            db.Database.ExecuteSqlRaw($"DELETE FROM db.Course");
+
+            return null;
+        }
+
     }
 }

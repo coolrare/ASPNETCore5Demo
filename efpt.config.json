@@ -1,0 +1,84 @@
+﻿{
+   "ContextClassName": "ContosoUniversityContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": "Models",
+   "OutputPath": "Models",
+   "ProjectRootNamespace": "ASPNETCore5Demo.Models",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Course]",
+         "ObjectType": 0
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[CourseInstructor]",
+         "ObjectType": 0
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Department]",
+         "ObjectType": 0
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Enrollment]",
+         "ObjectType": 0
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[OfficeAssignment]",
+         "ObjectType": 0
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Person]",
+         "ObjectType": 0
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[vwCourseStudentCount]",
+         "ObjectType": 0
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[vwCourseStudents]",
+         "ObjectType": 0
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[vwDepartmentCourseCount]",
+         "ObjectType": 0
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Department_Delete]",
+         "ObjectType": 1
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Department_Insert]",
+         "ObjectType": 1
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Department_Update]",
+         "ObjectType": 1
+      }
+   ],
+   "UseDatabaseNames": false,
+   "UseDbContextSplitting": false,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseInflector": false,
+   "UseLegacyPluralizer": false,
+   "UseNodaTime": false,
+   "UseSpatial": false
+}

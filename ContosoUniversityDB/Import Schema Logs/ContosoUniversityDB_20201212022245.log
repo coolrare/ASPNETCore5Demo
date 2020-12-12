@@ -1,0 +1,83 @@
+2020/12/12 上午 10:22:45	This log contains information about the import schema operation into project 'ContosoUniversityDB' on computer 'WILL10LENOVO2' by user 'wakau'.
+2020/12/12 上午 10:22:45	Import of database schema has started.
+2020/12/12 上午 10:22:51	Gathering database credentials
+2020/12/12 上午 10:22:51	Gathering database options
+2020/12/12 上午 10:22:51	Gathering generic database scoped configuration option
+2020/12/12 上午 10:22:51	Gathering users
+2020/12/12 上午 10:22:51	Gathering roles
+2020/12/12 上午 10:22:51	Gathering application roles
+2020/12/12 上午 10:22:51	Gathering role memberships
+2020/12/12 上午 10:22:51	Gathering filegroups
+2020/12/12 上午 10:22:51	Gathering full-text catalogs
+2020/12/12 上午 10:22:51	Gathering assemblies
+2020/12/12 上午 10:22:51	Gathering certificates
+2020/12/12 上午 10:22:51	Gathering asymmetric keys
+2020/12/12 上午 10:22:51	Gathering symmetric keys
+2020/12/12 上午 10:22:51	Gathering encrypted symmetric keys
+2020/12/12 上午 10:22:51	Gathering schemas
+2020/12/12 上午 10:22:51	Gathering XML schema collections
+2020/12/12 上午 10:22:51	Gathering user-defined data types
+2020/12/12 上午 10:22:51	Gathering user-defined types
+2020/12/12 上午 10:22:51	Gathering table types
+2020/12/12 上午 10:22:51	Gathering unique keys for table types
+2020/12/12 上午 10:22:51	Gathering primary keys for table types
+2020/12/12 上午 10:22:51	Gathering indexes for table types
+2020/12/12 上午 10:22:52	Gathering check constraints for table types
+2020/12/12 上午 10:22:52	Gathering default constraints for table types
+2020/12/12 上午 10:22:52	Gathering partition functions
+2020/12/12 上午 10:22:52	Gathering partition schemes
+2020/12/12 上午 10:22:52	Gathering functions
+2020/12/12 上午 10:22:52	Gathering encrypted functions
+2020/12/12 上午 10:22:52	Gathering aggregates
+2020/12/12 上午 10:22:52	Gathering procedures
+2020/12/12 上午 10:22:52	Gathering encrypted procedures
+2020/12/12 上午 10:22:52	Gathering tables
+2020/12/12 上午 10:22:52	Gathering primary keys
+2020/12/12 上午 10:22:52	Gathering unique constraints
+2020/12/12 上午 10:22:52	Gathering foreign keys
+2020/12/12 上午 10:22:52	Gathering default constraints
+2020/12/12 上午 10:22:52	Gathering check constraints
+2020/12/12 上午 10:22:52	Gathering views
+2020/12/12 上午 10:22:52	Gathering encrypted views
+2020/12/12 上午 10:22:52	Gathering indexes
+2020/12/12 上午 10:22:52	Gathering statistics
+2020/12/12 上午 10:22:52	Gathering full-text index stoplists
+2020/12/12 上午 10:22:52	Gathering search property lists
+2020/12/12 上午 10:22:52	Gathering search properties
+2020/12/12 上午 10:22:52	Gathering full-text indexes
+2020/12/12 上午 10:22:52	Gathering column store indexes
+2020/12/12 上午 10:22:52	Gathering spatial indexes
+2020/12/12 上午 10:22:52	Gathering XML indexes
+2020/12/12 上午 10:22:52	Gathering Selective XML indexes
+2020/12/12 上午 10:22:52	Gathering encrypted triggers
+2020/12/12 上午 10:22:52	Gathering triggers
+2020/12/12 上午 10:22:52	Gathering encrypted and clr ddl triggers
+2020/12/12 上午 10:22:52	Gathering ddl triggers
+2020/12/12 上午 10:22:52	Creating edge constraints
+2020/12/12 上午 10:22:53	Gathering synonyms
+2020/12/12 上午 10:22:53	Gathering defaults
+2020/12/12 上午 10:22:53	Gathering data constraint uddt bindings
+2020/12/12 上午 10:22:53	Gathering rules
+2020/12/12 上午 10:22:53	Gathering data constraint uddt bindings
+2020/12/12 上午 10:22:53	Gathering message types
+2020/12/12 上午 10:22:53	Gathering queues
+2020/12/12 上午 10:22:53	Gathering contracts
+2020/12/12 上午 10:22:53	Gathering services
+2020/12/12 上午 10:22:53	Gathering event notifications
+2020/12/12 上午 10:22:53	Gathering remote service bindings
+2020/12/12 上午 10:22:53	Gathering broker priorities
+2020/12/12 上午 10:22:53	Gathering signatures
+2020/12/12 上午 10:22:53	Gathering data compression options
+2020/12/12 上午 10:22:53	Gathering sequence types
+2020/12/12 上午 10:22:53	Gathering security policies
+2020/12/12 上午 10:22:53	Gather column encryption keys
+2020/12/12 上午 10:22:53	Gathering column master keys
+2020/12/12 上午 10:22:53	Gathering external data sources
+2020/12/12 上午 10:22:53	Gathering external file formats
+2020/12/12 上午 10:22:53	Gathering external tables
+2020/12/12 上午 10:22:53	Gathering extended properties
+2020/12/12 上午 10:22:56	Scanning project for duplicate elements
+2020/12/12 上午 10:22:56	Finished duplicate element processing
+2020/12/12 上午 10:22:56	Finished importing database.
+2020/12/12 上午 10:22:56	A summary of the import was saved to the following location: C:\Projects\ContosoUniversityDB\Import Schema Logs\ContosoUniversityDB_20201212022245.log
+2020/12/12 上午 10:22:56	Click Finish to continue...

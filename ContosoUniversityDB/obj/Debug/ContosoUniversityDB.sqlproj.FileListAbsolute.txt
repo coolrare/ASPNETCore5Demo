@@ -1,0 +1,8 @@
+C:\Projects\ContosoUniversityDB\bin\Debug\ContosoUniversityDB.dacpac
+C:\Projects\ContosoUniversityDB\obj\Debug\ContosoUniversityDB.sqlprojAssemblyReference.cache
+C:\Projects\ContosoUniversityDB\obj\Debug\Model.xml
+C:\Projects\ContosoUniversityDB\obj\Debug\refactor.xml
+C:\Projects\ContosoUniversityDB\obj\Debug\postdeploy.sql
+C:\Projects\ContosoUniversityDB\obj\Debug\predeploy.sql
+C:\Projects\ContosoUniversityDB\obj\Debug\ContosoUniversityDB.dll
+C:\Projects\ContosoUniversityDB\obj\Debug\ContosoUniversityDB.pdb

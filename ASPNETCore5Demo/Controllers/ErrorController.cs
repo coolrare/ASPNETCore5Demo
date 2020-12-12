@@ -8,7 +8,7 @@ namespace ASPNETCore5Demo.Controllers
 {
     public class ErrorController : ControllerBase
     {
-        [Route("/error")]
+        [HttpGet("/error")]
         public IActionResult Index()
         {
             return Problem();

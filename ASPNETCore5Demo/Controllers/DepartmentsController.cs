@@ -25,6 +25,13 @@ namespace ASPNETCore5Demo.Controllers
             return db.Departments.AsNoTracking().ToList();
         }
 
+        [HttpGet("{*date:datetime}")]
+        public ActionResult<IEnumerable<Department>> GetDepartmentsByDate(DateTime date)
+        {
+            return db.Departments.AsNoTracking()
+                .Where(p => p.StartDate > date).ToList();
+        }
+
         [HttpGet("ddl")]
         public ActionResult<IEnumerable<DepartmentDropDown>> GetDepartmentDropDown()
         {

@@ -13,6 +13,7 @@ using NSwag.Annotations;
 
 namespace ASPNETCore5Demo.Controllers
 {
+    [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
     public class CourseController : ControllerBase
@@ -26,7 +27,7 @@ namespace ASPNETCore5Demo.Controllers
         [HttpGet("empty")]
         public IActionResult Empty()
         {
-            return new JsonResult("TEST");
+            return Ok("TEST");
         }
 
         [HttpGet("")]

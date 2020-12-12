@@ -1,10 +1,13 @@
-﻿Microsoft Visual Studio Solution File, Format Version 12.00
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASPNETCore5Demo", "ASPNETCore5Demo\ASPNETCore5Demo.csproj", "{7791FFFA-0CF7-4644-A571-3FC3BB2509AF}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "ContosoUniversityDB", "ContosoUniversityDB\ContosoUniversityDB.sqlproj", "{B425B2A0-B01F-44AC-BBB5-7F43119757C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{53809F33-86BF-4604-8D56-AA1A8912503C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,6 +25,10 @@ Global
 		{B425B2A0-B01F-44AC-BBB5-7F43119757C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B425B2A0-B01F-44AC-BBB5-7F43119757C3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B425B2A0-B01F-44AC-BBB5-7F43119757C3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{53809F33-86BF-4604-8D56-AA1A8912503C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53809F33-86BF-4604-8D56-AA1A8912503C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53809F33-86BF-4604-8D56-AA1A8912503C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53809F33-86BF-4604-8D56-AA1A8912503C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

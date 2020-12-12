@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ASPNETCore5Demo.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Http;
 
 namespace ASPNETCore5Demo.Controllers
 {
@@ -38,10 +39,18 @@ namespace ASPNETCore5Demo.Controllers
         }
 
         [HttpGet("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesDefaultResponseType]
         public ActionResult<IEnumerable<Course>> GetDepartmentCourses(int id)
         {
             var dept = db.Departments.Include(p => p.Courses)
-                         .First(p => p.DepartmentId == id);
+                         .FirstOrDefault(p => p.DepartmentId == id);
+
+            if (dept == null)
+            {
+                return NotFound();
+            }
 
             return dept.Courses.ToList();
 

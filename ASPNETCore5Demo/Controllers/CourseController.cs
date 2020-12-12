@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ASPNETCore5Demo.Models;
 using Omu.ValueInjecter;
+using Microsoft.AspNetCore.Http;
 
 namespace ASPNETCore5Demo.Controllers
 {
@@ -38,6 +39,8 @@ namespace ASPNETCore5Demo.Controllers
         }
 
         [HttpPost("")]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesDefaultResponseType]
         public ActionResult<Course> PostCourse(Course model)
         {
             db.Courses.Add(model);
@@ -47,6 +50,8 @@ namespace ASPNETCore5Demo.Controllers
         }
 
         [HttpPut("{id}")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesDefaultResponseType]
         public IActionResult PutCourse(int id, CourseUpdateModel model)
         {
             var c = db.Courses.Find(id);

@@ -6,3 +6,9 @@ C:\Projects\ContosoUniversityDB\obj\Debug\postdeploy.sql
 C:\Projects\ContosoUniversityDB\obj\Debug\predeploy.sql
 C:\Projects\ContosoUniversityDB\obj\Debug\ContosoUniversityDB.dll
 C:\Projects\ContosoUniversityDB\obj\Debug\ContosoUniversityDB.pdb
+C:\Projects\ASPNETCore5Demo\ContosoUniversityDB\bin\Debug\ContosoUniversityDB.dacpac
+C:\Projects\ASPNETCore5Demo\ContosoUniversityDB\bin\Debug\ContosoUniversityDB.dll
+C:\Projects\ASPNETCore5Demo\ContosoUniversityDB\bin\Debug\ContosoUniversityDB.pdb
+C:\Projects\ASPNETCore5Demo\ContosoUniversityDB\obj\Debug\ContosoUniversityDB.sqlprojAssemblyReference.cache
+C:\Projects\ASPNETCore5Demo\ContosoUniversityDB\obj\Debug\ContosoUniversityDB.dll
+C:\Projects\ASPNETCore5Demo\ContosoUniversityDB\obj\Debug\ContosoUniversityDB.pdb

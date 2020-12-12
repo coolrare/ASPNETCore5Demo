@@ -7,6 +7,9 @@ using Microsoft.EntityFrameworkCore;
 using ASPNETCore5Demo.Models;
 using Omu.ValueInjecter;
 using Microsoft.AspNetCore.Http;
+using Microsoft.OpenApi.Models;
+using Microsoft.OpenApi;
+using NSwag.Annotations;
 
 namespace ASPNETCore5Demo.Controllers
 {
@@ -18,6 +21,12 @@ namespace ASPNETCore5Demo.Controllers
         public CourseController(ContosoUniversityContext db)
         {
             this.db = db;
+        }
+
+        [HttpGet("empty")]
+        public IActionResult Empty()
+        {
+            return new JsonResult("TEST");
         }
 
         [HttpGet("")]
@@ -33,9 +42,20 @@ namespace ASPNETCore5Demo.Controllers
         }
 
         [HttpGet("{id}")]
+        [OpenApiOperation("GetCourseById")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesDefaultResponseType]
         public ActionResult<Course> GetCourseById(int id)
         {
-            return db.Courses.Find(id);
+            var c = db.Courses.Find(id);
+
+            if (c == null)
+            {
+                return NotFound();
+            }
+
+            return c;
         }
 
         [HttpPost("")]

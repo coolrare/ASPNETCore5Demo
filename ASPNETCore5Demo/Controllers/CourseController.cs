@@ -24,6 +24,13 @@ namespace ASPNETCore5Demo.Controllers
             this.db = db;
         }
 
+        [HttpGet("error")]
+        public IActionResult Error()
+        {
+            throw new Exception("ERROR");
+            return Ok("TEST");
+        }
+
         [HttpGet("empty")]
         public IActionResult Empty()
         {

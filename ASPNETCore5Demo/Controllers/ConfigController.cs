@@ -28,7 +28,7 @@ namespace ASPNETCore5Demo.Controllers
             logger.LogTrace("Trace");
             logger.LogDebug("Debug");
             logger.LogInformation("Information");
-            logger.LogWarning("Warning");
+            logger.LogWarning("Warning: Issuer {Issuer}", jwtSettings.Value.Issuer);
             logger.LogError("Error");
             logger.LogCritical("Critical");
 

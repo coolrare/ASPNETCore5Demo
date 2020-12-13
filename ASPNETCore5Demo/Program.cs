@@ -19,8 +19,9 @@ namespace ASPNETCore5Demo
                 .MinimumLevel.Debug()
                 .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
                 .Enrich.FromLogContext()
-                .WriteTo.Console()
-                .WriteTo.File(@"g:\aspnetcore5.log")
+                //.WriteTo.Console()
+                //.WriteTo.File(@"g:\aspnetcore5.log")
+                .WriteTo.Seq("http://localhost:5341")
                 .CreateLogger();
 
             try

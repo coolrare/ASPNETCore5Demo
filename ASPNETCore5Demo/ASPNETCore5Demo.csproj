@@ -6,6 +6,7 @@
 
 	<PropertyGroup>
 		<IncludeOpenApiAnalyzers>true</IncludeOpenApiAnalyzers>
+		<UserSecretsId>3683e782-66cc-4e66-9c81-1f7145e9d83a</UserSecretsId>
 	</PropertyGroup>
 
 	<ItemGroup>

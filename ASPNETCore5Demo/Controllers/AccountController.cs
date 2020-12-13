@@ -7,6 +7,7 @@ using ASPNETCore5Demo.Models;
 using Microsoft.Extensions.Logging;
 using ASPNETCore5Demo.Helpers;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ASPNETCore5Demo.Controllers
 {
@@ -40,6 +41,17 @@ namespace ASPNETCore5Demo.Controllers
                 return BadRequest();
             }
         }
+
+        [Authorize]
+        [HttpGet("~/refreshToken")]
+        public ActionResult<LoginResult> RefreshToken()
+        {
+            return new LoginResult()
+            {
+                Token = jwt.GenerateToken(User.Identity.Name, 10)
+            };
+        }
+
 
         private bool ValidateUser(LoginModel model)
         {

@@ -6,9 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 using ASPNETCore5Demo.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ASPNETCore5Demo.Controllers
 {
+    [Authorize(Roles = "Manager")]
     [Route("api/[controller]")]
     [ApiController]
     public class DepartmentsController : ControllerBase

@@ -10,9 +10,11 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.OpenApi.Models;
 using Microsoft.OpenApi;
 using NSwag.Annotations;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ASPNETCore5Demo.Controllers
 {
+    [Authorize]
     [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
